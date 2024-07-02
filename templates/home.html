@@ -1,0 +1,97 @@
+{% block pagecontent %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopeyeOnSol mainpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="/media/popeye2.jpeg" />
+</head>
+<body>
+    <div id="main">
+        <style>
+            * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff
+        }
+    
+    
+        body {
+            min-height: 100vh;
+            background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(/media/popeye1.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding: 10px 5%;
+            text-align: justify;
+        }
+    
+        #h1-meme {
+            height: 30px;
+            width: 30px;
+        }
+        </style>
+
+
+
+        <h1>buy PopeyeOnSol | $POPSOL <img id="h1-meme" src="/media/popeye2.jpeg" alt=""></h1> 
+
+        <h5>and join us in the adventure of accumulating treasures </h5>
+        <br /><br />
+        <div><h1>CA:</h1></div>
+        <div class="copyfield">
+            <h3><span id="link">
+                [coming soon]
+                </span> &nbsp;&nbsp;&nbsp;
+            <span id="copy-btn"><i class="fa-regular fa-copy"></i></span></h3>
+        </div> <br /> <br />
+        <div>
+            <h1>LP:</h1>
+            <div><h3>100% burned</h3></div><br /><br />
+            <p><h1>TAX:</h1><div><h3>0% TAX!</h3></div><br /> <br />
+                <p><h1>SUPPLY:</h1><div><h3>1B TOTAL SUPPLY</h3></div></p>
+            </p>
+        </div><br /><br />
+
+        <div><h1>our socials:</h1>
+            <p><div><h3><a href="https://x.com/popeye_on_sol/status/1807558534604726354?s=46" target="_blank">Twitter(x)</a></h3></div></p><br />
+            <p><div><h3><a href="https://t.me/+sddnOPsQEhcxYWZk" target="_blank">Telegram</a></h3></div></p>
+        </div>
+
+        <div><br /> <br />
+            <p><h1>where do you buy?:</h1></p>
+            <p><h3><a href="">pump.fun [coming soon]</a></h3></p><br />
+            <p><h3><a href="">Dexscreener [coming soon]</a></h3></p><br />
+            <p><h3><a href="">Dextools [coming soon]</a></h3></p><br />
+            <p><h3><a href="">coinmarketcap [coming soon]</a></h3></p><br />
+            <p><h3><a href="">coingecko [coming soon]</a></h3></p><br /><br />
+
+
+            <footer>
+                <div>&copy; PopeyeOnSol </div>
+            </footer>
+
+        </div>
+        
+        <script>
+            var copybtn = document.getElementById("copy-btn");
+            var link = document.getElementById("link");
+
+            copybtn.onclick = function () {
+                navigator.clipboard.writeText(link.innerHTML);
+                copybtn.innerHTML = "copied"
+                setTimeout(function (){
+                    copybtn.innerHTML = `<i class="fa-regular fa-copy"></i>`
+                }, 2000)
+            }
+        </script>
+    </div>
+    
+</body>
+</html>
+
+{% endblock %}
+
